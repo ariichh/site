@@ -1,0 +1,49 @@
+.header {
+  background-color: #fff;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.nav {
+  display: flex;
+}
+.forRecruiters {
+  margin-left: 20px;
+  color: #333;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.buttonjoin {
+  background-color: #3D1EDD;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.buttonjoin:hover {
+  background-color: #2b0f9e;
+}
+.login {
+padding: 10px 20px;
+margin-top: 10px;
+margin-bottom: 10px;
+color: #3D1EDD;        /* цвет текста, например, синий */
+background-color: transparent; /* прозрачный фон */
+border: 2px solid #3D1EDD;     /* обводка того же цвета */
+cursor: pointer;
+
+}
