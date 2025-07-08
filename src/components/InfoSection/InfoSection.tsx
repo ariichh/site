@@ -13,7 +13,8 @@ const InfoSection = () => {
           alt="Разные типы объектов недвижимости"
           className={styles.infoImage}
         />
-        <CardList />
+        {/* Ограничиваем до 3 карточек и скрываем картинки */}
+        <CardList limit={3} showImages={false} />
       </div>
     </section>
   );

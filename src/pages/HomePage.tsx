@@ -14,11 +14,9 @@ const HomePage: React.FC = () => (
     <SliderSection />
     <QuoteSection />
     <InfoSection />
-
-
     <h2>
       <Link to="/cards" style={{ textDecoration: "none", color: "inherit", cursor: "pointer" }}>
-        Карточки
+        Объекты недвижимости
       </Link>
     </h2>
 

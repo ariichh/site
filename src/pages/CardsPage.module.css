@@ -1,12 +1,65 @@
 .container {
-  max-width: 1200px;      /* Максимальная ширина контента */
-  margin: 0 auto;         /* Центрирование по горизонтали */
-  padding: 0 20px;        /* Отступы слева и справа */
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 16px; /* 1rem ≈ 16px */
+}
+
+.selectedImageContainer {
+  text-align: center;
+  margin-bottom: 32px; /* 2rem ≈ 32px */
+}
+
+.selectedImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .cardsGrid {
   display: grid;
-  display:flex;
-  gap: 20px;              /* Отступы между карточками */
-  margin-top: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 35px; /* 1.5rem ≈ 24px */
+  margin-top: 16px; /* 1rem ≈ 16px */
+}
+
+/* Карточка */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 19px; /* 1.2rem ≈ 19px */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transform: translateY(-6px);
+}
+
+.cardImage {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 13px; /* 0.8rem ≈ 13px */
+}
+
+.card-content h3 {
+  margin: 0 0 8px 0; /* 0 0 0.5rem 0 ≈ 0 0 8px 0 */
+  font-size: 20px; /* 1.25rem ≈ 20px */
+  color: #222;
+  font-weight: 600;
+}
+
+.card-content p {
+  margin: 0;
+  font-size: 16px; /* 1rem ≈ 16px */
+  color: #555;
+  line-height: 1.3;
+  flex-grow: 1;
 }
