@@ -26,7 +26,6 @@ const propertyData = [
 const CardsPage: React.FC = () => {
   const [selectedCardId, setSelectedCardId] = useState<number | null>(null);
 
-  // Получаем объект карточки по выбранному id
   const selectedCard = selectedCardId
     ? propertyData[(selectedCardId - 1) % propertyData.length]
     : null;
